@@ -2099,7 +2099,9 @@
 		 * Make sure only one pin is applied to an element at the same time.
 		 * An element can be pinned multiple times, but only successively.
 		 * _**NOTE:** The option `pushFollowers` has no effect, when the scene duration is 0._
-		 * @method ScrollMagic.Scene#setPin
+		 * @method ScrollMagic.Scene#
+		 
+		 
 		 * @example
 		 * // pin element and push all following elements down by the amount of the pin duration.
 		 * scene.setPin("#pin");
@@ -2209,7 +2211,7 @@
 			// if relative size, transfer it to spacer and make pin calculate it...
 			if (_pinOptions.relSize.width) {
 				_util.css(spacer, {
-					width: sizeCSS.width
+					width: '100%'
 				});
 			}
 			if (_pinOptions.relSize.height) {
